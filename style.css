@@ -103,3 +103,99 @@ nav ul li a{
 .banner_images img{
     width: 100%;
 }
+
+/* Brand Section */
+
+.brand{
+    margin: 100px 0;
+}
+
+.small_container{
+    width: 70%;
+    margin:  0 auto;
+}
+
+.brand_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand_box img{
+    width: 100%;
+}
+
+/* Responsive For Mobile Device */
+
+@media screen and (max-width: 576px) {
+    /* Nav Responsive */
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        margin-top: 50px;
+    }
+    /* Banner Responsive */
+
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    .banner_info{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .banner_info h2{
+        font-size: 2rem;
+        line-height: 45px;
+    }
+
+    /* Brand Responsive */
+
+    .brand_container{
+        flex-direction: column;
+    }
+
+    .brand_box img{
+        width: 200px;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Responsive For Tablet Device */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    /* Nav Responsive */
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        margin-top: 30px;
+    }
+
+    /* Banner Responsive */
+
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    .banner_info{
+        margin-top: 50px;
+    }
+
+    /* Brand Responsive */
+
+    .brand_container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        row-gap: 50px;
+    }
+
+    .brand_box img{
+        width: 150px;
+    }
+}
