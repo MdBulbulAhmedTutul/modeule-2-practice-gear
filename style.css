@@ -125,6 +125,76 @@ nav ul li a{
     width: 100%;
 }
 
+/* Product Section */
+
+.products{
+    margin: 100px 0;
+}
+
+.section_title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--header-color);
+}
+
+.products_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 70px;
+    grid-gap: 30px;
+}
+
+.product_box{
+    border-radius: 5px;
+    background-color: var(--normal-color);
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+}
+
+.product_box h2{
+    color: var(--header-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.product_box h3{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.product_box p{
+    color: var(--gray-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.rating{
+    color: var(--icon-color);
+    font-size: 1.1rem;
+}
+
+.product_btn{
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: var(--primary-btn);
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    color: var(--normal-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.product_btn:hover{
+    background-color: transparent;
+    border-color: var(--primary-btn);
+    color: var(--header-color);
+}
+
 /* Responsive For Mobile Device */
 
 @media screen and (max-width: 576px) {
@@ -162,6 +232,13 @@ nav ul li a{
         width: 200px;
         margin-bottom: 1.5rem;
     }
+
+    /* Product Responsive */
+
+    .products_container{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* Responsive For Tablet Device */
@@ -197,5 +274,11 @@ nav ul li a{
 
     .brand_box img{
         width: 150px;
+    }
+
+    /* Product Responsive */
+
+    .products_container{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
