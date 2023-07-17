@@ -228,6 +228,21 @@ nav ul li a{
     margin-bottom: 1rem;
 }
 
+/* Footer Section */
+
+footer{
+    width: 100%;
+    background-color: #0A0826;
+    color: var(--normal-color);
+    padding: 6rem 0;
+}
+
+.text_box{
+    /* margin: auto;
+    display: block; */
+    text-align: center;
+}
+
 /* Responsive For Mobile Device */
 
 @media screen and (max-width: 576px) {
@@ -340,3 +355,4 @@ nav ul li a{
         width: 100%;
     }
 }
+
