@@ -65,7 +65,7 @@ nav ul li a{
 .banner{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 150px;
 }
 
@@ -98,6 +98,10 @@ nav ul li a{
     background-color: transparent;
     border-color: var(--primary-btn);
     color: var(--header-color);
+}
+
+.banner_images{
+    background-image: url(images/Circle\ design.svg);
 }
 
 .banner_images img{
